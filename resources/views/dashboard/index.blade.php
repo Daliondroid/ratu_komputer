@@ -5,7 +5,7 @@
   <title>Dasbor</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
@@ -58,7 +58,7 @@
           </h3>
           <button type="button"
             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="defaultModal">
+            data-modal-toggle="viewModal">
             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -186,343 +186,6 @@
   </div>
   <!-- END MODAL LIHAT -->
 
-<!-- MODAL TAMBAH ADMIN -->
-<div id="defaultModal" tabindex="-1" aria-hidden="true"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[60] justify-center items-center w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
-      <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
-        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Tambah Admin
-          </h3>
-          <button type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="defaultModal">
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <form action="#">
-
-          <div class="grid gap-4 mb-4 sm:grid-cols-2">
-                      <div>
-            <label for="idAdmin"
-              class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">ID
-              Admin</label>
-            <input type="text" name="idAdmin" id="idAdmin"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Contoh: K-001" required="">
-          </div>
-            <div>
-              <label for="name"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-              <input type="text" name="name" id="name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: Dave Elyada Gerika" required="">
-            </div>
-
-            <div>
-              <label for="password"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-              <input type="text" name="password" id="password"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: admin1" required="">
-            </div>
-            <div>
-              <label for="kelamin"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Jenis
-                Kelamin</label>
-              <select id="kelamin"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih Jenis Kelamin</option>
-                <option value="L">Laki-laki</option>
-                <option value="P">Perempuan</option>
-              </select>
-            </div>
-            <div>
-              <label for="email"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-              <input type="email" name="email" id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: gerikadep@gmail.com" required="">
-            </div>
-            <div>
-              <label for="phone-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
-                Kontak</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
-                    <path
-                      d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
-                  </svg>
-                </div>
-                <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Contoh: 085543342809" required />
-              </div>
-            </div>
-            <div>
-              <label for="jabatan"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Jabatan</label>
-              <select id="jabatan"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih jabatan</option>
-                <option value="MANAGER">Manager</option>
-                <option value="SENIOR">Staff Senior</option>
-                <option value="STAFF">Staff</option>
-              </select>
-            </div>
-            <div>
-              <label for="cabang"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Cabang</label>
-              <select id="cabang"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih cabang</option>
-                <option value="SRG">Serang</option>
-                <option value="BGR">Bogor</option>
-                <option value="DPK">Depok</option>
-              </select>
-            </div>
-                          <div>
-              <label for="status"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Status</label>
-              <select id="status"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih status</option>
-                <option value="admin">Admin</option>
-                <option value="superadmin">Super Admin</option>
-              </select>
-              </div>
-                        <div>
-            <label for="foto"
-              class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Foto</label>
-
-            <input
-              class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-              aria-describedby="file_input_help" id="file_input" type="file">
-            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Hanya format PNG
-              atau JPG</p>
-          </div>
-            <div class="sm:col-span-2">
-              <label for="alamat"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat</label>
-              <textarea id="alamat" rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Tulis Alamat Admin"></textarea>
-            </div>
-
-          </div>
-          <button type="submit"
-            class="text-white inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-            <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-            Kerjakan
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- END MODAL TAMBAH -->
-
-  <!-- MODAL EDIT ADMIN -->
-  <div id="editModal" tabindex="-1" aria-hidden="true"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[60] justify-center items-center w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
-      <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
-        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Edit Data Admin
-          </h3>
-          <button type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="editModal">
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <form action="#">
-                      <div class="lg:col-span-1">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-32 h-32 rounded-lg overflow-hidden bg-gradient-to-br from-teal-400 to-teal-600 mb-4 shadow-lg">
-                  <img src="https://cdn.getmerlin.in/cms/pfp1_fe1e0a17e8.jpg" alt="Profile Picture"
-                    class="w-full h-full object-cover">
-                </div>
-              </div>
-            </div>
-
-          <div class="grid gap-4 mb-4 sm:grid-cols-2">
-                        <div>
-              <label for="status"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">status</label>
-              <select id="status"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih status</option>
-                <option value="admin">Admin</option>
-                <option value="superadmin">Super Admin</option>
-              </select>
-            </div>
-                      <div>
-            <label for="foto"
-              class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Foto</label>
-
-            <input
-              class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-              aria-describedby="file_input_help" id="file_input" type="file">
-            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Hanya format PNG
-              atau JPG</p>
-          </div>
-            <div>
-              <label for="KodeAdmin"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Kode
-                Admin</label>
-              <input type="text" name="KodeAdmin" id="KodeAdmin"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: K-001" required="">
-            </div>
-            <div>
-              <label for="name"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-              <input type="text" name="name" id="name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: Dave Elyada Gerika" required="">
-            </div>
-            <div>
-              <label for="password"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-              <input type="text" name="password" id="password"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: admin1" required="">
-            </div>
-            <div>
-              <label for="kelamin"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Jenis
-                Kelamin</label>
-              <select id="kelamin"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih Jenis Kelamin</option>
-                <option value="L">Laki-laki</option>
-                <option value="P">Perempuan</option>
-              </select>
-            </div>
-            <div>
-              <label for="email"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-              <input type="email" name="email" id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Contoh: gerikadep@gmail.com" required="">
-            </div>
-            <div>
-              <label for="phone-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
-                Kontak</label>
-              <div class="relative">
-                <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
-                    <path
-                      d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
-                  </svg>
-                </div>
-                <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Contoh: 085543342809" required />
-              </div>
-            </div>
-            <div>
-              <label for="jabatan"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Jabatan</label>
-              <select id="jabatan"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih jabatan</option>
-                <option value="MANAGER">Manager</option>
-                <option value="SENIOR">Staff Senior</option>
-                <option value="STAFF">Staff</option>
-              </select>
-            </div>
-            <div>
-              <label for="cabang"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Cabang</label>
-              <select id="cabang"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                <option selected="">Pilih cabang</option>
-                <option value="SRG">Serang</option>
-                <option value="BGR">Bogor</option>
-                <option value="DPK">Depok</option>
-              </select>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="alamat"
-                class="block w-full text-left mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat</label>
-              <textarea id="alamat" rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Tulis Alamat Admin"></textarea>
-            </div>
-
-          </div>
-          <button type="submit"
-            class="text-white inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-            <i class="fas fa-edit"></i>
-            Kerjakan
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- END MODAL EDIT -->
-
-  <!-- MODAL DELETE ADMIN -->
-  <div id="deleteModal" tabindex="-1" aria-hidden="true"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[60] justify-center items-center w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-      <div class="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
-        <button type="button"
-          class="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-          data-modal-toggle="deleteModal">
-          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-          <span class="sr-only">Close modal</span>
-        </button>
-        <svg class="text-gray-400 dark:text-gray-500 w-11 h-11 mb-3.5 mx-auto" aria-hidden="true" fill="currentColor"
-          viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-        <p class="mb-4 text-gray-500 dark:text-gray-300">
-          Apakah anda yakin menghapus data ini? <br>
-          Data yang dihapus tak bisa dipulihkan kembali!</p>
-        <div class="flex justify-center items-center space-x-4">
-          <button data-modal-toggle="deleteModal" type="button"
-            class="py-2 px-3 text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-            Urungkan
-          </button>
-          <button type="submit"
-            class="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-900">
-            Ya, yakin
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END MODAL DELETE -->
 <body class="bg-gray-100 dark:bg-gray-900 ">
   
   <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -539,7 +202,7 @@
             </svg>
           </button>
           <a href="admin_DASBOR.html" class="flex ml-2 md:mr-24">
-            <img src="../assets/images/RatuKom_hitam.png" alt="Ratu Komputer Logo" class="h-12 mr-2">
+            <img src="asset/RatuKom_hitam.png" alt="Ratu Komputer Logo" class="h-12 mr-2">
           </a>
         </div>
         <div class="flex items-center">
@@ -665,7 +328,7 @@
           <li class="inline-flex items-center">
             <a href="#"
               class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-              Super Admin
+              Admin
             </a>
           </li>
           <li>
@@ -717,6 +380,121 @@
         </div>
       </div>
 
+
+      <div class="bg-white rounded-lg shadow dark:bg-gray-800 p-6 mb-6">
+        <div class="p-4 border-b border-gray-200 dark:border-gray-700">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
+              <i class="fas fa-desktop mr-2"></i>Simulasi Rakitan PC
+            </h2>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto mt-4">
+          <table id="simulationTable" class="w-full text-sm text-left text-gray-500 dark:text-gray-400 display nowrap" style="width:100%">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th class="px-6 py-3">Kode</th>
+                <th class="px-6 py-3">Processor</th>
+                <th class="px-6 py-3">Motherboard</th>
+                <th class="px-6 py-3">RAM</th>
+                <th class="px-6 py-3">Casing</th>
+                <th class="px-6 py-3">SSD</th>
+                <th class="px-6 py-3">HDD</th>
+                <th class="px-6 py-3">VGA</th>
+                <th class="px-6 py-3">PSU</th>
+                <th class="px-6 py-3">Mouse</th>
+                <th class="px-6 py-3">Keyboard</th>
+                <th class="px-6 py-3">Monitor</th>
+                <th class="px-6 py-3">Cooler Fan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">RK321</td>
+                <td class="px-6 py-4">Intel Core i5-13400</td>
+                <td class="px-6 py-4">ASUS ROG Strix B760-F Gaming WiFi</td>
+                <td class="px-6 py-4">Corsair Vengeance RGB DDR5-6000 (32GB Kit 2x16GB)</td>
+                <td class="px-6 py-4">Havn HS 420</td>
+                <td class="px-6 py-4">WD Black SN8100 (2TB)</td>
+                <td class="px-6 py-4">Toshiba X300 16TB Internal HDD</td>
+                <td class="px-6 py-4">NVIDIA GeForce RTX 5070</td>
+                <td class="px-6 py-4">Corsair RM850e Gold (850W)</td>
+                <td class="px-6 py-4">Razer DeathAdder V4 Pro</td>
+                <td class="px-6 py-4">SteelSeries Apex Pro TKL Gen 3</td>
+                <td class="px-6 py-4">Dell Alienware AW2525HM (25" 1080p 320Hz)</td>
+                <td class="px-6 py-4">Noctua NF-A12x25 G2 PWM</td>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">RK423</td>
+                <td class="px-6 py-4">AMD Ryzen 5 7600</td>
+                <td class="px-6 py-4">Gigabyte X670 AORUS ELITE AX</td>
+                <td class="px-6 py-4">G.Skill Ripjaws V DDR4-3200 (16GB Kit 2x8GB)</td>
+                <td class="px-6 py-4">Phanteks Eclipse G400A</td>
+                <td class="px-6 py-4">SK hynix Platinum P51 (2TB)</td>
+                <td class="px-6 py-4">Seagate IronWolf Pro 24TB Internal HDD</td>
+                <td class="px-6 py-4">AMD Radeon RX 9070 XT</td>
+                <td class="px-6 py-4">Silverstone Hela 850R Platinum (850W)</td>
+                <td class="px-6 py-4">Logitech G305 Lightspeed</td>
+                <td class="px-6 py-4">Asus ROG Azoth</td>
+                <td class="px-6 py-4">AOC Q27G4ZD (27" 1440p 240Hz)</td>
+                <td class="px-6 py-4">Arctic P12 PWM PST</td>
+              </tr>
+
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">RK987</td>
+                <td class="px-6 py-4">AMD Ryzen 5 7600</td>
+                <td class="px-6 py-4">MSI MAG Z790 Tomahawk WiFi</td>
+                <td class="px-6 py-4">Kingston Fury Beast DDR5-5600 (16GB Kit 2x8GB)</td>
+                <td class="px-6 py-4">Lian Li O11 Dynamic</td>
+                <td class="px-6 py-4">Biwin Black Opal NV7400 (2TB)</td>
+                <td class="px-6 py-4">Western Digital Elements 14TB External HDD</td>
+                <td class="px-6 py-4">NVIDIA GeForce RTX 5060 Ti 16GB</td>
+                <td class="px-6 py-4">ESGAMING EB650W</td>
+                <td class="px-6 py-4">Logitech G502 X</td>
+                <td class="px-6 py-4">Keychron C3 Pro</td>
+                <td class="px-6 py-4">INNOCN 49" Curved Ultrawide (32:9 1440p)</td>
+                <td class="px-6 py-4">Arctic P12 Pro</td>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">RK209</td>
+                <td class="px-6 py-4">Intel Core i9-13900K</td>
+                <td class="px-6 py-4">ASRock B650M Steel Legend WiFi</td>
+                <td class="px-6 py-4">Crucial Ballistix DDR4-3600 (32GB Kit 2x16GB)</td>
+                <td class="px-6 py-4">Montech King 95 Pro</td>
+                <td class="px-6 py-4">Crucial MX500 (1TB)</td>
+                <td class="px-6 py-4">Seagate Barracuda 8TB Internal HDD</td>
+                <td class="px-6 py-4">Intel Arc B580</td>
+                <td class="px-6 py-4">XPG Core Reactor II VE Gold (850W)</td>
+                <td class="px-6 py-4">Corsair Sabre V2 Pro</td>
+                <td class="px-6 py-4">Wooting 80HE</td>
+                <td class="px-6 py-4">Samsung Odyssey G9 OLED 49" (32:9 1440p)</td>
+                <td class="px-6 py-4">Havn H12</td>
+              </tr>
+
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">RK438</td>
+                <td class="px-6 py-4">Qualcomm Snapdragon 8 Gen 2</td>
+                <td class="px-6 py-4">ASUS Prime H610M-E D4</td>
+                <td class="px-6 py-4">TeamGroup T-Force Delta RGB DDR5-5200</td>
+                <td class="px-6 py-4">Cougar Omni X Mid-Tower</td>
+                <td class="px-6 py-4">WD Blue SN5000 (4TB)</td>
+                <td class="px-6 py-4">WD Ultrastar DC HC310 6TB Enterprise</td>
+                <td class="px-6 py-4">AMD Radeon RX 9060 XT 16GB</td>
+                <td class="px-6 py-4">Silverstone Extreme 850R Platinum (SFX)</td>
+                <td class="px-6 py-4">Corsair Scimitar Elite Wireless SE</td>
+                <td class="px-6 py-4">Razer BlackWidow V4 Pro</td>
+                <td class="px-6 py-4">Samsung Odyssey Neo G7 43" (4K 144Hz)</td>
+                <td class="px-6 py-4">Coolify Holo Fan</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <div class="bg-white rounded-lg shadow dark:bg-gray-800 p-6">
         <div class="p-4 border-b border-gray-200 dark:border-gray-700">
           <div class="flex items-center justify-between">
@@ -724,12 +502,6 @@
               <i class="fas fa-users mr-2"></i>Karyawan
             </h2>
             <div class="flex items-center space-x-2">
-
-              <button type="button" id="defaultModalButton" data-modal-target="defaultModal"
-                data-modal-toggle="defaultModal"
-                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                <i class="fas fa-plus mr-1"></i>Tambah Admin
-              </button>
             </div>
           </div>
         </div>
@@ -744,7 +516,6 @@
                 <th scope="col" class="px-6 py-3">Jenis Kelamin</th>
                 <th scope="col" class="px-6 py-3">Jabatan</th>
                 <th scope="col" class="px-6 py-3">Detail Informasi</th>
-                <th scope="col" class="px-6 py-3 text-center">Aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -760,18 +531,7 @@
                 class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Lihat data
               </button>
                 </td>
-                <td class="px-6 py-4 text-center">
-                  <button type="button" id="editModalButton" data-modal-target="editModal" data-modal-toggle="editModal"
-                    class="bg-yellow-400 hover:bg-yellow-500 text-white p-2 rounded m-2">
-                    <i class="fas fa-edit"></i>
-                  </button>
 
-                  <button type="button" id="deleteButton" data-modal-target="deleteModal"
-                    data-modal-toggle="deleteModal" class="bg-red-500 hover:bg-red-600 text-white p-2 rounded m-2">
-                    <i class="fas fa-trash"></i>
-                  </button>
-
-                </td>
               </tr>
               <!-- SETELAH LINE INI DATA BOLEH DIHAPUS UNTUK KEBUTUHAN BACKEND -->
               <tr
@@ -786,18 +546,6 @@
                 class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Lihat data
               </button>
                 </td>
-                <td class="px-6 py-4 text-center">
-                  <button type="button" id="editModalButton" data-modal-target="editModal" data-modal-toggle="editModal"
-                    class="bg-yellow-400 hover:bg-yellow-500 text-white p-2 rounded m-2">
-                    <i class="fas fa-edit"></i>
-                  </button>
-
-                  <button type="button" id="deleteButton" data-modal-target="deleteModal"
-                    data-modal-toggle="deleteModal" class="bg-red-500 hover:bg-red-600 text-white p-2 rounded m-2">
-                    <i class="fas fa-trash"></i>
-                  </button>
-
-                </td>
               </tr>
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -811,17 +559,7 @@
                 class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Lihat data
               </button>
                 </td>
-                <td class="px-6 py-4 text-center">
-                  <button type="button" id="editModalButton" data-modal-target="editModal" data-modal-toggle="editModal"
-                    class="bg-yellow-400 hover:bg-yellow-500 text-white p-2 rounded m-2">
-                    <i class="fas fa-edit"></i>
-                  </button>
 
-                  <button type="button" id="deleteButton" data-modal-target="deleteModal"
-                    data-modal-toggle="deleteModal" class="bg-red-500 hover:bg-red-600 text-white p-2 rounded m-2">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </td>
               </tr>
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -835,17 +573,7 @@
                 class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Lihat data
               </button>
                 </td>
-                <td class="px-6 py-4 text-center">
-                  <button type="button" id="editModalButton" data-modal-target="editModal" data-modal-toggle="editModal"
-                    class="bg-yellow-400 hover:bg-yellow-500 text-white p-2 rounded m-2">
-                    <i class="fas fa-edit"></i>
-                  </button>
 
-                  <button type="button" id="deleteButton" data-modal-target="deleteModal"
-                    data-modal-toggle="deleteModal" class="bg-red-500 hover:bg-red-600 text-white p-2 rounded m-2">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </td>
               </tr>
               <tr
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -859,17 +587,7 @@
                 class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Lihat data
               </button>
                 </td>
-                <td class="px-6 py-4 text-center">
-                  <button type="button" id="editModalButton" data-modal-target="editModal" data-modal-toggle="editModal"
-                    class="bg-yellow-400 hover:bg-yellow-500 text-white p-2 rounded m-2">
-                    <i class="fas fa-edit"></i>
-                  </button>
 
-                  <button type="button" id="deleteButton" data-modal-target="deleteModal"
-                    data-modal-toggle="deleteModal" class="bg-red-500 hover:bg-red-600 text-white p-2 rounded m-2">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </td>
               </tr>
             </tbody>
           </table>
@@ -879,7 +597,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <script>
+<script>
     // Sidebar toggle for mobile
     const sidebarToggle = document.getElementById('sidebar-toggle');
     const sidebar = document.getElementById('sidebar');
@@ -888,9 +606,26 @@
       sidebar.classList.toggle('-translate-x-full');
     });
 
+    // --- HANYA PERLU SATU BLOK INI SAJA UNTUK DATATABLES ---
     $(document).ready( function () {
-    $('#myTable').DataTable();
-} );
+        
+        // 1. Cek apakah myTable sudah jalan sebelumnya, kalau ada hancurkan dulu (opsional, tapi aman)
+        if ($.fn.DataTable.isDataTable('#myTable')) {
+            $('#myTable').DataTable().destroy();
+        }
+
+        // 2. Inisialisasi Tabel Karyawan (myTable)
+        $('#myTable').DataTable({
+            responsive: true
+        });
+
+        // 3. Inisialisasi Tabel Simulasi (simulationTable)
+        $('#simulationTable').DataTable({
+            scrollX: true,      // Agar bisa scroll ke samping
+            responsive: false,  // Matikan responsive agar kolom tidak disembunyikan
+            autoWidth: false    // Lebar kolom menyesuaikan konten
+        });
+    });
   </script>
 
 </body>
